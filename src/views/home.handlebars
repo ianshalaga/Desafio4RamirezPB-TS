@@ -1,7 +1,17 @@
-<div>
-    <p class="bg-slate-400">Nombre: {{name}}</p>
-    <p class="font-semibold bg-orange-600">Apellido {{lastName}}</p>
-    <p class="text-red-600">Edad: {{age}}</p>
-    <p class="bg-sky-500">Email: {{email}}</p>
-    <p class="">Teléfono: {{telephone}}</p>
+<div class="">
+    <ul class="flex flex-col">
+        {{#each products}}
+        <li class="grid grid-cols-9">
+            <p>ID: {{id}}</p>
+            <p>Title: {{title}}</p>
+            <p>Description: {{description}}</p>
+            <p>Code: {{code}}</p>
+            <p>Price: {{price}}</p>
+            <p>Stock: {{stock}}</p>
+            <p>Category: {{category}}</p>
+            <p>Status: {{status}}</p>
+            <p>Thumbnail: {{thumbnail}}</p>
+        </li>
+        {{/each}}
+    </ul>
 </div>

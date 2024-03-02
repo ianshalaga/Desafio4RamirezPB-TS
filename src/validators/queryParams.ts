@@ -9,7 +9,12 @@ function validateQueryParams(data: any): QueryParams {
   let validatedData: QueryParams = null;
   const validationResult = queryParamsSchema.safeParse(data);
   if (validationResult.success) {
-    validatedData = validationResult.data;
+    if (validationResult.data.limit) {
+      if (!isNaN(parseInt(validationResult.data.limit)))
+        validatedData = validationResult.data;
+    } else {
+      validatedData = { limit: null };
+    }
   }
   return validatedData;
 }

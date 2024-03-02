@@ -43,7 +43,7 @@ Enlace al repositorio de **GitHub** con el proyecto completo, sin la carpeta de 
 > **TypeScript** dependencies.
 
 - `npm i tailwindcss -D`
-- `npm i @tailwindcss/forms -D` (Conjunto de estilos predefinidos diseñados específicamente para mejorar el aspecto y la funcionalidad de los formularios **HTML**.)
+- `npm i @tailwindcss/forms -D` (Conjunto de estilos predefinidos diseñados específicamente para mejorar el aspecto y la funcionalidad de los formularios **HTML**)
 
 > Styles: **TailwindCSS**
 
