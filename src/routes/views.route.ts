@@ -34,4 +34,8 @@ viewsRouter.get("/", async (req: Request, res: Response) => {
   });
 });
 
+viewsRouter.get("/realtimeproducts", (req: Request, res: Response) => {
+  res.render("realTimeProducts", {});
+});
+
 export default viewsRouter;

@@ -29,6 +29,10 @@ Enlace al repositorio de **GitHub** con el proyecto completo, sin la carpeta de 
 
 > **Handlebars** es un motor de plantillas para **JavaScript** que permite generar **HTML** de forma dinámica al combinar datos con plantillas **HTML** predefinidas. Es especialmente útil en aplicaciones web para renderizar vistas del lado del servidor con datos dinámicos.
 
+- `npm i socket.io`
+
+> Es una biblioteca de **JavaScript** que permite la comunicación bidireccional en tiempo real entre clientes web y servidores. Proporciona una abstracción sobre **WebSockets** y otros mecanismos de transporte, lo que facilita el desarrollo de aplicaciones web en tiempo real.
+
 ## devDependencies
 
 - `npm i nodemon -D`
