@@ -2,17 +2,18 @@ const socket = io(); // Establishes a connection between the client and the serv
 
 socket.on("products", (products) => {
     const productList = document.getElementById("productsList");
+    productList.innerHTML = ""
     products.forEach((product) => {
         const listItem = document.createElement("li");
         listItem.textContent = `ID: ${product.id},
-                                    Title: ${product.title},
-                                    Description: ${product.description},
-                                    Code: ${product.code},
-                                    Price: ${product.price},
-                                    Stock: ${product.stock},
-                                    Category: ${product.category},
-                                    Status: ${product.status},
-                                    Thumbnail: ${product.thumbnail}`
+                                        Title: ${product.title},
+                                        Description: ${product.description},
+                                        Code: ${product.code},
+                                        Price: ${product.price},
+                                        Stock: ${product.stock},
+                                        Category: ${product.category},
+                                        Status: ${product.status},
+                                        Thumbnail: ${product.thumbnail}`
         productList.appendChild(listItem);
     });
 })
